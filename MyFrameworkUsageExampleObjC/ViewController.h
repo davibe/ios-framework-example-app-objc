@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@import MyFramework;
+
 @interface ViewController : UIViewController
 
+@property MyFramework* framework;
 
 @end
 

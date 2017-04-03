@@ -8,14 +8,24 @@
 
 #import <XCTest/XCTest.h>
 
+#import "ViewController.h"
+
+
+@import MyFramework;
+
 @interface MyFrameworkUsageExampleObjCTests : XCTestCase
 
+@property ViewController* vc;
+
 @end
+
 
 @implementation MyFrameworkUsageExampleObjCTests
 
 - (void)setUp {
     [super setUp];
+    self.vc = [[ViewController alloc] init];
+    [self.vc viewDidLoad];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -25,6 +35,12 @@
 }
 
 - (void)testExample {
+    XCTAssert(self.vc != nil);
+    MyFramework* foo = self.vc.framework;
+    BOOL result = [foo doSomething];
+    XCTAssert(foo.optionalString != nil);
+    XCTAssert(result);
+    
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
