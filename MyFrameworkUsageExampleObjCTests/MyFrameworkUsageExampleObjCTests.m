@@ -36,10 +36,13 @@
 
 - (void)testExample {
     XCTAssert(self.vc != nil);
-    MyFramework* foo = self.vc.framework;
-    BOOL result = [foo doSomething];
-    XCTAssert(foo.optionalString != nil);
+    MyFramework* framework = self.vc.framework;
+    BOOL result = [framework doSomething];
+    XCTAssert(framework.optionalString != nil);
     XCTAssert(result);
+    
+    NSString *resourceContent = [framework doReadResource];
+    XCTAssert(resourceContent != nil);
     
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
