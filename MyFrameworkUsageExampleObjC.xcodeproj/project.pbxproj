@@ -14,10 +14,12 @@
 		0D39A3491E928C4200804C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D39A3481E928C4200804C3C /* Assets.xcassets */; };
 		0D39A34C1E928C4200804C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D39A34A1E928C4200804C3C /* LaunchScreen.storyboard */; };
 		0D39A3571E928C4200804C3C /* MyFrameworkUsageExampleObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A3561E928C4200804C3C /* MyFrameworkUsageExampleObjCTests.m */; };
-		0DB59DA11E929471002E8D23 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D39A3611E928C5D00804C3C /* MyFramework.framework */; };
-		0DB59DA21E9294D5002E8D23 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D39A3611E928C5D00804C3C /* MyFramework.framework */; };
-		0DB59DA31E9294D5002E8D23 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D39A3611E928C5D00804C3C /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0DB90CC91E92A1EF00DB0682 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D39A3611E928C5D00804C3C /* MyFramework.framework */; };
+		0D8B6A851E9674E400BA02B6 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A831E9674E400BA02B6 /* MyFramework.framework */; };
+		0D8B6A861E9674E400BA02B6 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A831E9674E400BA02B6 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D8B6A871E9674E400BA02B6 /* Observable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A841E9674E400BA02B6 /* Observable.framework */; };
+		0D8B6A881E9674E400BA02B6 /* Observable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A841E9674E400BA02B6 /* Observable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D8B6A891E96760200BA02B6 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A831E9674E400BA02B6 /* MyFramework.framework */; };
+		0D8B6A8A1E96760F00BA02B6 /* Observable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8B6A841E9674E400BA02B6 /* Observable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0DB59DA31E9294D5002E8D23 /* MyFramework.framework in Embed Frameworks */,
+				0D8B6A861E9674E400BA02B6 /* MyFramework.framework in Embed Frameworks */,
+				0D8B6A881E9674E400BA02B6 /* Observable.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +61,8 @@
 		0D39A3521E928C4200804C3C /* MyFrameworkUsageExampleObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkUsageExampleObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D39A3561E928C4200804C3C /* MyFrameworkUsageExampleObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFrameworkUsageExampleObjCTests.m; sourceTree = "<group>"; };
 		0D39A3581E928C4200804C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D39A3611E928C5D00804C3C /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFramework.framework; sourceTree = "<group>"; };
+		0D8B6A831E9674E400BA02B6 /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyFramework.framework; path = Carthage/Build/iOS/MyFramework.framework; sourceTree = "<group>"; };
+		0D8B6A841E9674E400BA02B6 /* Observable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Observable.framework; path = Carthage/Build/iOS/Observable.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB59DA11E929471002E8D23 /* MyFramework.framework in Frameworks */,
-				0DB59DA21E9294D5002E8D23 /* MyFramework.framework in Frameworks */,
+				0D8B6A851E9674E400BA02B6 /* MyFramework.framework in Frameworks */,
+				0D8B6A871E9674E400BA02B6 /* Observable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB90CC91E92A1EF00DB0682 /* MyFramework.framework in Frameworks */,
+				0D8B6A891E96760200BA02B6 /* MyFramework.framework in Frameworks */,
+				0D8B6A8A1E96760F00BA02B6 /* Observable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +90,8 @@
 		0D39A3301E928C4200804C3C = {
 			isa = PBXGroup;
 			children = (
-				0D39A3611E928C5D00804C3C /* MyFramework.framework */,
+				0D8B6A831E9674E400BA02B6 /* MyFramework.framework */,
+				0D8B6A841E9674E400BA02B6 /* Observable.framework */,
 				0D39A33B1E928C4200804C3C /* MyFrameworkUsageExampleObjC */,
 				0D39A3551E928C4200804C3C /* MyFrameworkUsageExampleObjCTests */,
 				0D39A33A1E928C4200804C3C /* Products */,
@@ -382,6 +388,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = MyFrameworkUsageExampleObjC/Info.plist;
@@ -400,6 +407,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = MyFrameworkUsageExampleObjC/Info.plist;
@@ -417,6 +425,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MyFrameworkUsageExampleObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -434,6 +443,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = MyFrameworkUsageExampleObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
